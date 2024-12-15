@@ -1,4 +1,3 @@
-local builtin = require('telescope.builtin')
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -39,3 +38,8 @@ config.setup({
 
 require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
+
+
+
+vim.keymap.set('n', '<S-l>', ':Neotree filesystem reveal toggle right<CR>', {})
+
