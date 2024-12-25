@@ -5,7 +5,7 @@ return {
     event = { 'BufReadPost', 'BufNewFile' },
     config = function()
       require'nvim-treesitter.configs'.setup {
-        ensure_installed = { "lua","javascript", "typescript" },
+        auto_install = true,
         highlight = {
           enable = true,
         },
