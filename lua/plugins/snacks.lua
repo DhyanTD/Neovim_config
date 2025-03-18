@@ -4,6 +4,11 @@ return {
   lazy = false,
   opts = {
     bigfile = { enabled = true },
+    lazygit = {
+      -- your lazygit configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
     dashboard = {
       enabled = true,
       sections = {
@@ -49,7 +54,10 @@ return {
     styles = {
       notification = {
       }
-    }
+    },
+    animate = {
+      enabled = true,
+    },
   },
   keys = {
     { "<leader>z",  function() Snacks.zen() end,                     desc = "Toggle Zen Mode" },

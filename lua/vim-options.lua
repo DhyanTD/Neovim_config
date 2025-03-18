@@ -24,6 +24,14 @@ vim.keymap.set('n','Y','"+Y')
 vim.keymap.set('x','y','"+y')
 vim.keymap.set('x','Y','"+Y')
 
+vim.keymap.set('n', 'x', '"+x')
+vim.keymap.set('n', 'd', '"+d')
+vim.keymap.set('n', 'dd', '"+dd')
+
+vim.keymap.set('x', 'x', '"+x')
+vim.keymap.set('x', 'd', '"+d')
+
+
 vim.keymap.set('n','p','"+p')
 vim.keymap.set('n','P','"+P')
 vim.keymap.set('x','p','"+p')
