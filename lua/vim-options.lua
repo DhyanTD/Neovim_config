@@ -2,6 +2,9 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+-- vim.cmd.colorscheme "one_monokai"
+vim.cmd[[colorscheme synthwave84]] 
+
 vim.g.mapleader = " "
 
 vim.opt.swapfile = false
@@ -36,4 +39,3 @@ vim.keymap.set('n','p','"+p')
 vim.keymap.set('n','P','"+P')
 vim.keymap.set('x','p','"+p')
 vim.keymap.set('x','P','"+P')
-

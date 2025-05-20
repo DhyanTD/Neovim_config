@@ -18,6 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 -- vim.opt.statuscolumn = "%=%{v:relnum?v:relnum:v:lnum} %s %C"
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.wrap = false
 vim.o.statuscolumn = "%s %l %r"
 
 
