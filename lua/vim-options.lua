@@ -58,3 +58,11 @@ capabilities.textDocument.foldingRange = {
 	dynamicRegistration = false,
 	lineFoldingOnly = true,
 }
+
+-- transparent back
+vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "ExtraGroup" })
+require("transparent").clear_prefix("NeoTree")
+require("transparent").clear_prefix("lualine")
+require("transparent").clear_prefix("telescope")
+require("transparent").clear_prefix("barbar")
+require("transparent").clear_prefix("gitsigns")
